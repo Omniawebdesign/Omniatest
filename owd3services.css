@@ -1,0 +1,284 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  :root {
+    --primary: #f35444;
+    --primaryLight: #FFBA43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4E4B66;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+  }
+  #sbs-7843,
+  #sbs-7843-r {
+    font-family: "robotoregular";
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    /*makes button align to the left */
+    text-align: left;
+   
+  }
+  #sbs-7843 .cs-container,
+  #sbs-7843-r .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #sbs-7843 .cs-left,
+  #sbs-7843-r .cs-left {
+    width: 88%;
+    margin: 0 auto 3.75rem 0;
+    position: relative;
+    display: block;
+    /* width divided by height */
+    aspect-ratio: 1.30909091;
+  }
+  #sbs-7843 .cs-left:before,
+  #sbs-7843-r .cs-left:before {
+    /* Top right box */
+    content: '';
+    width: 13.5625rem;
+    height: 13.5625rem;
+    background: var(--primaryLight);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    bottom: -2.5rem;
+    right: -2.5rem;
+    display:none;
+  }
+  #sbs-7843 .cs-left img,
+  #sbs-7843-r .cs-left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 105%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 3.5em;
+  }
+  #sbs-7843 .cs-right,
+  #sbs-7843-r .cs-right {
+    width: 100%;
+    margin: auto;
+    max-width: 40.625rem;
+  }
+  #sbs-7843 .cs-topper,
+  #sbs-7843-r .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: block;
+  }
+  #sbs-7843 .cs-title,
+  #sbs-7843-r .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 50rem;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #sbs-7843 .cs-text,
+  #sbs-7843-r .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 35.125rem;
+    margin: 0;
+    /* 32px - 40px */
+    margin-bottom: clamp(2rem, 4vw, 2.5rem);
+    color: var(--bodyTextColor);
+  }
+  #sbs-7843 .cs-button-solid,
+  #sbs-7843-r .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #sbs-7843 .cs-button-solid:before,
+  #sbs-7843-r .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width .3s;
+  }
+  #sbs-7843 .cs-button-solid:hover:before,
+  #sbs-7843-r .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #sbs-7843,
+  #sbs-7843-r {
+    overflow: visible;
+  }
+  #sbs-7843 .cs-container,
+  #sbs-7843-r .cs-container {
+    max-width: 80rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* set flexbox back to the row orientation */
+    flex-direction: row;
+    margin-top: 3em;
+    padding: 0 1.5em;
+  }
+  #sbs-7843 .cs-left,
+  #sbs-7843-r .cs-left {
+    /* 300px - 522px */
+    width: clamp(18.75em, 42.5vw, 32.625em);
+    height: 17.625em;
+    /* reset margin */
+    margin: 0;
+    margin-right: 5.25em;
+    /* prevent flexbox from squishing it */
+    flex: none;
+    margin-top: 3.5em;
+  }
+  #sbs-7843 .cs-right,
+  #sbs-7843-r .cs-right {
+    /* reset margins to 0 so it doesnt mess with flexbox */
+    margin: 0;
+  }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #sbs-7843-r .cs-left {
+    margin-left: 5.25rem;
+    margin-right: 0;
+    /* sends it to the right side of the container */
+    order: 2;
+  }
+  #sbs-7843-r .cs-left:before {
+    right: 0;
+    left: -2.5rem;
+  }
+}
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+.cs-list,
+  .cs-list {
+    margin: 0;
+    /* 16px - 20px */
+    padding-left: clamp(1rem, 2vw, 1.25rem);
+  }
+  .cs-li,
+   .cs-li {
+    list-style: none;
+    /* 14px - 18px */
+    font-size: clamp(0.875rem, 1.3vw, 1.125rem);
+    line-height: 1.5em;
+    /* 8px - 12px */
+    margin-bottom: clamp(0.5rem, 1vw, 0.75rem);
+    color: var(--bodyTextColor);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .cs-li:last-of-type,
+   .cs-li:last-of-type {
+    
+  }
+
+
+
+
+
+
+ .cs-number,
+ .cs-number {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    /* 24px - 28px */
+    width: clamp(1.5rem, 2.9vw, 1.75rem);
+    height: clamp(1.5rem, 2.9vw, 1.75rem);
+    margin-right: 0.75rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* we set this element to align to the top of the li, so if there's 
+            multiple lines it will stay at the top instead of the center of the text */
+    align-self: flex-start;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+
+
+
+
+
+
+
+
+  #sbs-7843-r{
+    padding-top: 0;
+  }
+
+
+ .lastsec{
+  margin-top: -2em !important;
+ }

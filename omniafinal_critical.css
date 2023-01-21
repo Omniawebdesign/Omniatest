@@ -1,0 +1,1647 @@
+span{
+  color:var(--secondary1);
+}
+
+
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #hero {
+    font-size: inherit;
+    padding-top: 8.125em;
+    padding-bottom: 9.375em;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--primary1);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  #hero picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -11;
+  }
+  #hero picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #hero .hero-content {
+    width: 96%;
+    max-width: 71.5em;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+  #hero .hero-content {
+    padding: 0;
+  }
+  #hero .heroText {
+    width: 100%;
+    margin: auto;
+    /*max-width: 56.875em;*/
+  }
+  #hero .topper {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primaryAccessible);
+    font-size: 0.8em;
+    display: block;
+    line-height: 1.25em;
+    margin-bottom: 0.625em;
+  }
+  #hero h1 {
+    font-weight: 400;
+    font-size: min(11vw, 4em);
+    color: var(--body);
+    text-align: center;
+    line-height: 1.171875;
+    margin: auto;
+    width: 100%;
+    /*max-width: 12.03125em;*/
+    margin-bottom: 28px;
+    position: relative;
+  }
+  #hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: auto;
+    margin-bottom: 2.8em;
+    color: var(--body);
+    width: 100%;
+    text-align: center;
+    max-width: 38.66666667em;
+    opacity: 1;
+    font-weight: bold;
+  }
+  #hero .button-solid {
+    margin: auto;
+    display: inline-block;
+    width: auto;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #hero {
+    z-index: 1;
+    overflow: hidden;
+  }
+  #hero:before {
+    
+    opacity: 0.94;
+    
+  }
+  #hero .hero-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  #hero h1 {
+    font-size: min(8vw, 4em);
+  }
+  #hero p {
+    margin-bottom: 5em;
+  }
+}
+/* Small Desktop 1300px */
+@media only screen and (min-width: 81.25em) {
+  #hero {
+    padding-top: 17.0625em;
+    padding-bottom: 19.1875em;
+    background: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 1000px;
+  }
+  #hero picture {
+    display: none;
+  }
+}
+/* Dark mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #hero:before {
+    opacity: .9;
+  }
+}
+
+
+
+
+ /*-- -------------------------- -->
+<---          cars landing          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    #services {
+      font-family: 'Roboto', 'Arial', sans-serif;
+      max-width: 80rem;
+      padding: 0 1rem;
+      margin: 0 auto;
+      /* makes it overlap the hero-4062 section above it, changes at 1024px */
+      margin-top: -6.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column;
+      gap: 1.25rem;
+      position: relative;
+      z-index: 10;
+      margin-bottom: 4em;
+
+      width: 88%;
+    }
+    #services .cs-item {
+      list-style: none;
+      width: 100%;
+      
+      background-color: #fff;
+      /* 24px - 32px top & bottom */
+      /* 16px - 24px left & right */
+      padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 3.2vw, 1.5rem);
+      box-shadow: 0 0.2em 0.85em rgb(0 0 0 / 40%);
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #services .cs-icon-wrapper {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background-color: var(--primaryLight);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #services .cs-icon {
+      width: 2rem;
+      height: auto;
+      display: block;
+    }
+    #services .cs-info-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #services .cs-header {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 2vw, 1.5625rem);
+      line-height: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: var(--headerColor);
+      display: block;
+    }
+    #services .cs-desc {
+      /* 14px - 16px */
+      font-size: 16px;
+      line-height: 1.5em;
+      text-align: center;
+      color: var(--bodyTextColor);
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48em) {
+    #services {
+      flex-direction: row;
+    }
+  }
+  /* Tablet - 1024px */
+  @media only screen and (min-width: 64em) {
+    #services {
+      margin-top: -4.375rem;
+    }
+    #services .cs-item {
+      flex-direction: row;
+      justify-content: flex-start;
+      transition: transform .3s;
+    }
+    #services .cs-item:hover {
+      transform: translateY(-0.625rem);
+    }
+    #services .cs-icon-wrapper {
+      /* prevents flexbox from squishing it */
+      flex: none;
+    }
+    #services .cs-info-group {
+      align-items: flex-start;
+    }
+    #services .cs-header,
+    #services .cs-desc {
+      text-align: left;
+    }
+  }
+                                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    #services-9343 #service_1img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+  #services-9343 #service_2txt {
+      height: 300px;
+  }
+}
+
+
+  /*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    :root {
+      --primary: #176316;
+      --primaryLight: #229521;
+      --headerColor: #000;
+      --bodyTextColor: #4E4B66;
+      --bodyTextColorWhite: #FAFBFC;
+      /* 13px - 16px */
+      --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+      /* 31px - 49px */
+      --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+      --bodyFontSize: 1rem;
+      /* 60px - 100px top and bottom */
+      --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+    }
+    #services-9343 {
+      font-family: 'Roboto', 'Arial', sans-serif;
+      /* Centers Button */
+      text-align: center;
+      padding: var(--sectionPadding);
+      padding-top: 0em;
+    }
+    #services-9343 .cs-container {
+      width: 100%;
+      /* changes to 1280px at 768px */
+      max-width: 34.375em;
+      margin: auto;
+    }
+    #services-9343 .cs-topper {
+      font-size: var(--topperFontSize);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    #services-9343 .cs-title {
+      font-size: var(--headerFontSize);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: center;
+      max-width: 50rem;
+      margin: 0 auto 1rem;
+      color: var(--headerColor);
+      position: relative;
+    }
+    #services-9343 .cs-text {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5em;
+      text-align: center;
+      width: 100%;
+      max-width: 40.625rem;
+      margin: 0 auto;
+      /* 48px - 64px */
+      margin-bottom: clamp(3rem, 6.3vw, 4rem);
+      color: var(--bodyTextColor);
+    }
+    #services-9343 .cs-card-group {
+      margin: 0 auto;
+      /* 48px - 64px */
+      margin-bottom: clamp(3rem, 6.3vw, 4rem);
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /*gap: 1.25rem;*/
+      width: 88%;
+    }
+    #services-9343 .cs-item {
+      width: 100%;
+      text-align: left;
+      list-style: none;
+      /* 24px - 48px */
+      padding: clamp(1.5rem, 3.5vw, 3rem);
+      
+      box-shadow: 0 0.2em 0.85em rgb(0 0 0 / 30%);
+      
+      /* prevents padding from affecting height and width */
+      box-sizing: border-box;
+      /* clips the border bottom to match the curve of the border */
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: relative;
+      z-index: 1;
+    }
+    #services-9343 .cs-item:hover:before {
+      height: 100%;
+    }
+    #services-9343 .cs-item:hover .cs-h3,
+    #services-9343 .cs-item:hover .cs-item-text,
+    #services-9343 .cs-item:hover .cs-link {
+      color: var(--bodyTextColorWhite);
+    }
+    #services-9343 .cs-item:hover .cs-picture {
+      border-color: #fff;
+    }
+    #services-9343 .cs-item:hover .cs-picture img {
+      /* makes img turn grey, then brightened to get whiter */
+      filter: grayscale(1) brightness(1000%);
+    }
+   
+    #services-9343 .cs-picture {
+      /* 24px - 36px */
+      width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    }
+    #services-9343 .cs-picture img {
+      /* 30px - 60px */
+      width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    }
+    #services-9343 .cs-h3 {
+      /* 20px - 25px */
+      font-size: var(--headerFontSize);
+      line-height: 1.15em;
+      margin: 0;
+      /* 8px - 16px */
+      margin-bottom: clamp(0.5rem, 1.5vw, 1rem);
+      color: var(--headerColor);
+      transition: color .3s;
+      
+    }
+    #services-9343 .cs-item-text {
+      font-size: 16px;
+      line-height: 1.5em;
+      /* 24px - 32px */
+      margin: 0 0 clamp(1.5rem, 2.5vw, 2rem);
+      color: var(--bodyTextColor);
+      transition: color .3s;
+    }
+    #services-9343 .cs-link {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 1.6vw, 1.25rem);
+      line-height: 1.2em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 0;
+      color: var(--primary);
+      position: relative;
+      display: block;
+      margin-top: 2em;
+    }
+    #services-9343 .cs-link:hover:before {
+      width: 100%;
+    }
+    #services-9343 .cs-link:before {
+      /* hover bar under link */
+      content: '';
+      width: 0%;
+      height: 0.1875rem;
+      background: currentColor;
+      opacity: 1;
+      position: absolute;
+      display: block;
+      bottom: -0.1875rem;
+      left: 0;
+      transition: width .3s;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48em) {
+    #services-9343 .cs-container {
+      max-width: 80rem;
+    }
+    #services-9343 .cs-card-group {
+      flex-direction: row;
+      flex-wrap: wrap;
+      /*justify-content: space-between;*/
+      box-shadow: rgb(149 157 165 / 50%) 0 8px 24px;
+    }
+    #services-9343 .cs-item {
+      /*width: clamp(48.5%, 46vw, 49.2%);*/
+      width:50%
+    }
+
+
+}
+
+
+
+
+
+  #service_1img{
+    background: #151823 !important;
+  }
+
+
+  #service_2txt{
+    background: #151823 !important;
+    order: 3;
+  }
+                                
+  @media only screen and (min-width: 64em) {
+    #service_2txt {
+        order: initial;
+    }
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- -------------------------- -->
+<---          2          -->
+<--- -------------------------- -*/
+
+/*-- -------------------------- -->
+<---            2              - ->
+<--- -------------------------- -*/
+
+.flex-container{
+    display: flex;
+    width: 87%;
+    margin: auto;
+}
+
+.flex-container img{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.flex1{
+    width: 33%;
+}
+
+.flex2{
+
+}
+
+.flex3{
+    width: 33%;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#ourservices h2{
+    text-align: center;
+    margin-bottom: 0.3em;
+    margin-top: 4em;
+    /*font-size: var(--headerFontSize);*/
+    font-size: 52px;
+    margin-top: -0.85em;
+}
+
+.spannie{
+    display: block !important;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 5em;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    margin-top: 2em;
+    font-weight: bold;
+   
+}
+
+#ourservices{
+    padding-top: 0;
+    margin-top: -2em;
+    padding-bottom: 0.5em;
+}
+#ourservices span{
+    display: inline;
+}
+
+
+
+
+#hero{
+    padding-top: 9em;
+    padding-bottom: 8em;
+}
+
+
+.item{
+    padding-bottom: 3em;
+}
+
+
+
+
+.right-section h2{
+    text-align: left;
+}
+
+
+
+
+@media only screen and (min-width: 0){
+    #ourservices {
+        display: none;
+    }
+    
+    
+    }
+
+    @media only screen and (min-width: 768px){
+        #ourservices {
+            display: initial;
+        }
+        
+        
+        }
+
+
+
+@media only screen and (min-width: 768px){
+#services-4578 {
+    display: none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px - Contains Hover State */
+@media only screen and (min-width: 0em) {
+    :root {
+      --primary: #176316;
+      --primaryLight: #6EDF6D;
+      --headerColor: #000;
+      --bodyTextColor: #4E4B66;
+      /* 13px - 16px */
+      --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+      /* 31px - 49px */
+      --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+      --bodyFontSize: 1rem;
+      /* 60px - 100px top and bottom */
+      --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+    }
+    #services-4578 {
+      font-family: 'Roboto', 'Arial', sans-serif;
+      padding: var(--sectionPadding);
+      padding-top: 0;
+      width: 88%;
+    margin: auto;
+    }
+    #services-4578 .cs-container {
+      width: 100%;
+      max-width: 75rem;
+      margin: auto;
+    }
+    #services-4578 .cs-topper {
+      font-size: var(--topperFontSize);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    #services-4578 .cs-title {
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: center;
+      max-width: 40.625rem;
+      margin: 0 auto 1rem;
+      color: var(--headerColor);
+      position: relative;
+    }
+    #services-4578 .cs-text {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5em;
+      text-align: center;
+      width: 100%;
+      max-width: 37.5rem;
+      margin: 0 auto;
+      /* 48px - 64px */
+      margin-bottom: clamp(3rem, 6.3vw, 4rem);
+      color: var(--bodyTextColor);
+    }
+    #services-4578 .cs-card-group {
+      margin: 0 auto;
+      padding: 0;
+    }
+    #services-4578 .cs-item {
+      list-style: none;
+      text-align: center;
+      margin: 0 auto 4rem;
+      max-width: 20.8125rem;
+    }
+    #services-4578 .cs-item:last-of-type {
+      margin-bottom: 0;
+    }
+    #services-4578 .cs-item-image {
+      /* 60px -68px */
+      width: clamp(3.75em, 5vw, 4.25em);
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    #services-4578 .cs-heading3 {
+      font-size: 20px;
+      line-height: 1.2em;
+      text-align: center;
+      font-weight: 700;
+      color: var(--headerColor);
+      margin: 0 auto 1rem;
+    }
+    #services-4578 .cs-item-text {
+      /* 14px -16px */
+      font-size: 16px;
+      color: var(--bodyTextColor);
+      text-align: center;
+      margin: 0 auto 1rem;
+    }
+    #services-4578 .cs-item-link {
+      font-size: 1rem;
+      line-height: 1.5em;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+      position: relative;
+    }
+    #services-4578 .cs-item-link:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 0.1875rem;
+      width: 0%;
+      background-color: var(--primary);
+      opacity: 1;
+      bottom: -0.1875rem;
+      left: 0;
+      transition: width .3s;
+    }
+    #services-4578 .cs-item-link:hover:before {
+      width: 100%;
+    }
+  }
+  /* Tablet - 700px */
+  @media only screen and (min-width: 43.75em) {
+    #services-4578 .cs-picture {
+      max-width: 44.625rem;
+      width: 90%;
+      aspect-ratio: 1.64896074;
+    }
+    #services-4578 .cs-card-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 4rem;
+      flex-wrap: wrap;
+      max-width: 43.75rem;
+    }
+    #services-4578 .cs-item {
+      margin: 0;
+    }
+  }
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64em) {
+    #services-4578 .cs-card-group {
+      max-width: 100%;
+      justify-content: space-between;
+      column-gap: 0;
+    }
+    #services-4578 .cs-item {
+      /* 300px - 347px */
+      width: clamp(18.75rem, 28vw, 21.6875em);
+      max-width: 21.6875rem;
+    }
+  }
+                                  
+
+
+
+
+
+
+
+
+  /*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    :root {
+      --primary: #007CFB;
+      --primaryLight: #3396fc;
+      --secondary: #FF9900;
+      --headerColor: #000;
+      --bodyTextColor: #4E4B66;
+      --bodyTextColorWhite: #FAFBFC;
+      /* 13px - 16px */
+      --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+      /* 31px - 49px */
+      --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
+      --bodyFontSize: 1rem;
+      /* 60px - 100px top and bottom */
+      --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+    }
+    #pricing-7919 {
+      font-family: 'Roboto', 'Arial', sans-serif;
+      padding: var(--sectionPadding);
+      font-size: 30px;
+      width: 88%;
+      margin: auto;
+      padding-top: 1em;
+    }
+
+    #pricing-7919 span {
+        display: inline;
+      }
+
+    #pricing-7919 .cs-container {
+      width: 100%;
+      /* changes to 1104px on desktop */
+      max-width: 80rem;
+      margin: auto;
+      margin-top: 1em;
+    }
+    #pricing-7919 .cs-topper {
+      font-size: var(--topperFontSize);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    #pricing-7919 .cs-title {
+      font-size: var(--headerFontSize);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: center;
+      max-width: 50rem;
+      margin: 0 auto 1rem;
+      color: var(--headerColor);
+      position: relative;
+      margin-top: 0.6em;
+    }
+    #pricing-7919 .cs-text {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5em;
+      text-align: center;
+      width: 100%;
+      max-width: 40.625rem;
+      margin: 0 auto;
+      /* 48px - 64px */
+      margin-bottom: clamp(3rem, 3vw, 4rem);
+      color: #1a1a1a;
+      font-weight: bold;
+    }
+    #pricing-7919 .cs-card-group {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* 16px - 20px */
+      gap: clamp(1rem, 2vw, 1.25rem);
+    }
+    #pricing-7919 .cs-item {
+      list-style: none;
+      /* 20px - 32px top & bottom */
+      /* 16px - 32px left & right */
+      padding: clamp(1.25rem, 3vw, 2rem) clamp(1rem, 2.4vw, 2rem);
+      width: 100%;
+      max-width: 25.8125rem;
+      
+      background: #fff;
+      border: 1px solid #E8E8E8;
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+      box-shadow: 0 0.2em 0.85em rgb(0 0 0 / 30%);
+    }
+    #pricing-7919 .cs-item:nth-of-type(2) .cs-option2-text,
+    #pricing-7919 .cs-item:nth-of-type(2) .cs-option1-text {
+      transition-delay: .1s;
+    }
+    #pricing-7919 .cs-item:nth-of-type(3) .cs-option2-text,
+    #pricing-7919 .cs-item:nth-of-type(3) .cs-option1-text {
+      transition-delay: .2s;
+    }
+    #pricing-7919 .cs-popular {
+      background: #31333e;
+      position: relative;
+      /* clips the popular tag */
+      overflow: hidden;
+      /* send to the top */
+      order: -1;
+    }
+    #pricing-7919 .cs-popular:before {
+      /* Most Popular Tag */
+      content: 'Populaire';
+      font-size: 0.875rem;
+      text-align: center;
+      line-height: 1.8125rem;
+      font-weight: 700;
+      width: 10.625rem;
+      padding: 0 0.75rem;
+      color: #fff;
+      background-color: var(--secondary1);
+      position: absolute;
+      display: block;
+      top: 1.25rem;
+      right: -3.75rem;
+      transform: rotate(42deg);
+      margin-right: 10px;
+    }
+    #pricing-7919 .cs-popular .cs-h3,
+    #pricing-7919 .cs-popular .cs-item-text,
+    #pricing-7919 .cs-popular .cs-price,
+    #pricing-7919 .cs-popular .cs-included,
+    #pricing-7919 .cs-popular .cs-li,
+    #pricing-7919 .cs-popular .cs-small {
+      color: var(--bodyTextColorWhite);
+    }
+    #pricing-7919 .cs-popular .cs-button-solid {
+      
+      color: white;
+      transition: color .3s;
+      border: 2px solid white;
+    }
+    #pricing-7919 .cs-popular .cs-button-solid:before {
+      background-color: var(--secondary);
+    }
+    #pricing-7919 .cs-popular .cs-button-solid:hover {
+      color: #fff;
+    }
+    #pricing-7919 .cs-popular .cs-li-img {
+      /* turns the check mark white */
+      filter: brightness(900%);
+    }
+    #pricing-7919 .cs-h3 {
+      font-size: 1.25rem;
+      line-height: 1.2em;
+      font-weight: 700;
+      margin: 0 0 0.25rem;
+      padding: 0;
+      color: var(--headerColor);
+      text-align: center;
+    }
+    #pricing-7919 .cs-item-text {
+      font-size: 0.875rem;
+      line-height: 1.5em;
+      /* 16px - 24px */
+      margin: 0 0 clamp(1rem, 2vw, 1.5rem);
+      padding: 0;
+      color: var(--bodyTextColor);
+      text-align: center;
+    }
+    #pricing-7919 .cs-option-group {
+      position: relative;
+    }
+    #pricing-7919 .cs-option-group:after {
+      /* top right box */
+      content: '';
+      width: 100%;
+      height: 1px;
+      /* 32px - 40px */
+      margin-bottom: clamp(2rem, 4vw, 2.5rem);
+      background: linear-gradient(90deg, rgba(232, 232, 232, 0.2) 0%, #e8e8e8 53.78%, rgba(232, 232, 232, 0.2) 100%);
+      opacity: 1;
+      position: relative;
+      display: block;
+    }
+    #pricing-7919 .cs-price {
+      font-size: 2.0625rem;
+      line-height: 1.2em;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--headerColor);
+      /* spans are inline, need to add block for margin to work */
+      display: block;
+      text-align: center;
+    }
+    #pricing-7919 .cs-small {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: #4E4B66;
+    }
+    #pricing-7919 .cs-included {
+      font-size: 1rem;
+      line-height: 1.5em;
+      font-weight: 700;
+      /* 16px - 24px */
+      margin-bottom: clamp(1rem, 3vw, 1.5rem);
+      color: var(--headerColor);
+      display: block;
+      text-align: center;
+    }
+    #pricing-7919 .cs-ul {
+      padding: 0;
+      margin: 0;
+      /* 32px - 40px */
+      margin-bottom: clamp(2rem, 4vw, 2.5rem);
+    }
+    #pricing-7919 .cs-li {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0.75rem;
+      color: var(--bodyTextColor);
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    #pricing-7919 .cs-li:last-of-type {
+      margin-bottom: 0;
+    }
+    #pricing-7919 .cs-disabled {
+      /* fades out list items that are disabled from the price tier */
+      filter: grayscale(1);
+      opacity: .3;
+    }
+    #pricing-7919 .cs-li-img {
+      width: 1.25rem;
+      height: auto;
+      margin-top: 0.1875rem;
+      margin-right: 0.5rem;
+    }
+    #pricing-7919 .cs-button-solid {
+      font-size: 1rem;
+      line-height: 3.5em;
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: auto;
+      color: black;
+      min-width: 9.375rem;
+      margin: 0 0 2rem;
+      padding: 0 1.5rem;
+      border: 2px solid black;
+      border-radius: 35px;
+      display: block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+    }
+    #pricing-7919 .cs-button-solid:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: var(--secondary);
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 0.25rem;
+      transition: width .3s;
+    }
+    #pricing-7919 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+  }
+  /* Tablet 768px */
+  @media only screen and (min-width: 48em) {
+    #pricing-7919 .cs-card-group {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    #pricing-7919 .cs-item {
+      width: 100%;
+      /* ensures they stay the same height if you add more content */
+      align-self: stretch;
+    }
+    #pricing-7919 .cs-popular {
+      /* send back to its original order */
+      order: unset;
+    }
+    #pricing-7919 #cs-option2:before {
+      top: -0.625rem;
+    }
+    #pricing-7919 #cs-option2:after {
+      top: -2.1875rem;
+      right: -6.25rem;
+    }
+  }
+                                  
+
+
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    :root {
+      --primary: #FFCC75;
+      --bodyTextColorWhite: #FAFBFC;
+      /* 13px - 16px */
+      --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+      /* 31px - 49px */
+      --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+      --bodyFontSize: 1rem;
+      /* 60px - 100px top and bottom */
+      --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+    }
+    #cta-8361 {
+      font-family: 'Roboto', 'Arial', sans-serif;
+      /* Centers button */
+      text-align: center;
+      padding: 4em;
+      position: relative;
+    }
+    #cta-8361 .cs-container {
+      width: 100%;
+      max-width: 67.5em;
+      margin: auto;
+      position: relative;
+    }
+    #cta-8361 .cs-topper {
+      font-size: var(--topperFontSize);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    #cta-8361 .cs-title {
+      /* 31px - 49px */
+      font-size: var(--headerFontSize);
+      font-weight: 700;
+      line-height: 1.2em;
+      text-align: center;
+      max-width: 44.5625rem;
+      margin: 0 auto;
+      color: var(--bodyTextColorWhite);
+      position: relative;
+    }
+    #cta-8361 .cs-text {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5rem;
+      text-align: center;
+      width: 100%;
+      max-width: 41.25rem;
+      margin: 2.25rem auto 2.25rem;
+      color: var(--bodyTextColorWhite);
+    }
+    #cta-8361 .cs-button-solid {
+      font-size: 1rem;
+      line-height: 3.5rem;
+      text-decoration: none;
+      font-weight: 700;
+      margin: auto;
+      color: #fff;
+      padding: 0 1.5rem;
+      
+      border-radius: 35px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: color .3s;
+      margin-top: 3em;
+      border: 2px solid white;
+    }
+    #cta-8361 .cs-button-solid:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 0.25rem;
+      transition: width .3s;
+    }
+    #cta-8361 .cs-button-solid:hover {
+      color: var(--bodyTextColorWhite);
+    }
+    #cta-8361 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+    #cta-8361 .cs-picture {
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    #cta-8361 .cs-picture:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: var(--secondary1);
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    #cta-8361 .cs-picture img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+
+
+  @media only screen and (min-width: 64em) {
+
+  #hero h1{
+    font-family:'poppinsbold', sans-serif;
+    font-weight: bold;
+    font-size: 88px;
+  }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
+#ourservices img{
+
+  display: block;
+  margin: auto;
+}
+
+#ourservices h3{
+
+  text-align: center;
+  margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+#ourservices p{
+
+  text-align: center;
+}
+
+.flex1{
+  margin-right: 2.5em;
+}
+
+.flex3{
+  margin-left: 2.5em;
+}
+
+#hero h1{
+  font-family:'poppinsbold', sans-serif;
+  font-weight: bold;
+  
+}
+
+.cs-popular .cs-price{
+  font-size: 2.17rem !important;
+}
+
+.cs-popular .cs-h3{
+  font-size: 21px !important;
+}
+
+
+
+.cs-popular .cs-item-text{
+  font-size: 14.7px !important;
+}
+
+
+
+#item_1{
+  background: #8CC2E2 !important;
+  
+}
+
+#item_2{
+  background: var(--secondary1) !important;
+}
+
+#item_3{
+  background: #C154C1 !important;
+}
+
+#services .cs-header{
+  color: white;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+#services .cs-desc {
+  text-align: left;
+  color: white;
+  text-align: center !important;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+
+.item img{
+  scale: 0.99;
+}
+
+
+
+
+
+#ourservices img{
+  scale: 1.15;
+}
+
+.flex2 {
+  margin-top: 4.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cs_ulspace{
+  margin-bottom: 3.71em !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px - Contains hover animation */
+@media only screen and (min-width: 0em) {
+  :root {
+    --primary: #E5572C;
+    --headerColor: #1a1a1a;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+  }
+  #gallery-6188 {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    /* Centers button */
+    text-align: center;
+    padding: var(--sectionPadding);
+    position: relative;
+    /* Prevents overflow from the image going off screen */
+    overflow: hidden;
+    margin-bottom: -8em;
+  }
+
+  #gallery-6188 span {
+    display: inline;
+  }
+
+
+  #gallery-6188 .cs-container {
+    width: 100%;
+    max-width: 77.5em;
+    margin: auto;
+    margin-top: 5em;
+  }
+  #gallery-6188 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: block;
+  }
+  #gallery-6188 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 38.8125rem;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    color: var(--headerColor);
+    position: relative;
+    margin-top: -2em;
+  }
+  #gallery-6188 .cs-image-group {
+    margin-bottom: 3.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    margin-top: -5em;
+  }
+  #gallery-6188 .cs-item {
+    width: 40vw;
+    height: 40vw;
+    margin: 0;
+    position: relative;
+    display: block;
+  }
+  #gallery-6188 .cs-item:last-of-type {
+    margin-bottom: 0;
+  }
+  #gallery-6188 .cs-picture {
+    width: 40vw;
+    height: 40vw;
+    margin: 0;
+    display: block;
+    position: relative;
+  }
+  #gallery-6188 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  #gallery-6188 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #gallery-6188 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width .3s;
+  }
+  #gallery-6188 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #gallery-6188 .cs-image-group {
+   /* gap: 1.25em;*/
+  }
+  #gallery-6188 .cs-picture {
+    width: 30vw;
+    height: 30vw;
+    max-width: 21.625em;
+    max-height: 21.625em;
+  }
+  
+}
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

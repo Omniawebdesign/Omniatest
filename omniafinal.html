@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.mlc-music.com/">
+
+    <meta name="description" content="We provide the best possible education and practical training for the qualified piano student who wishes to pursue a career in music, as well as for music-loving children whose aims are non-professional.">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Omnia | Main Line Conservatory of Music | Ardmore, PA"/>
+    <meta property="og:description" content="We provide the best possible education and practical training for the qualified piano student who wishes to pursue a career in music, as well as for music-loving children whose aims are non-professional."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mlc-music.com/"/>
+    <meta property="og:image" content="/images/hero.jpg"/>
+    <meta property="og:image:secure_url" content="/images/hero.jpg"/>
+
+    <!--Favicons-->
+    <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/images/hero-m.webp">
+    <link rel="preload" as="image" href="/images/logo.svg">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/frank-ruhl-libre-v12-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-v24-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-v24-latin-600.woff2" crossorigin>
+
+    <link rel="stylesheet" href="omniafinal_critical.css"> <!-- Only above the fold css-->
+    <link rel="stylesheet" href="omniafinal_roots.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <!--Defer loading the whole page css-->
+    <link rel="stylesheet" href="/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+
+    <!--If the user has javascript disbaled, load this stylesheet-->
+    <noscript>
+        <link rel="stylesheet" href="/css/local.css">
+    </noscript>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YV4JMQNNY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0YV4JMQNNY');
+    </script>
+
+    <title>Omnia Web Design | Agence Strasbourg Line Conservatory of Music | Ardmore, PA</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div">
+            <!--This div is used to overcome a z-index issue where the open
+                #navbar-menu is on top of the #navigation. This bar places itself 
+                the #navbar-menu so that menu appears behind the #navigation
+            -->
+        </div>
+        <div class="container">
+            <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+            <a aria-label='click to go to home page' class='logo' href='/'>
+                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+                <img class="light" aria-hidden="true" src="bbb2.png" decoding="async" alt="logo" width="221" height="66">
+
+              
+            
+
+            <!--Main Nav-->
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a class='active' href='omniafinal.html'>Acceuil</a></li>
+                    <li><a href='omniafinal_services.html'>Services</a></li>
+                    <li><a href='/piano-lessons'>Tarif</a></li>
+                    <li><a href='omniafinal_contact.html'>Contact</a></li>
+                    
+                </ul>
+            </nav>
+
+           
+
+            <!--Mobile Nav toggle-->
+            <button aria-label="mobile navigation toggle" class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <section id="hero">
+            <div class="hero-content">
+                <div class="heroText">
+                  
+                    <h1 id="home-h">Conception web <span> au service des PME</span></h1>
+                    <p>
+                        Un design étudié pour vous offrir le meilleurs taux de convertion, pour un chiffre d'affaire maximisé
+                    </p>
+                    <a class='button-solid white-hover' href='/contact' rel='noopener' target='_blank'>
+                        Je souhaite creer mon site
+                    </a>
+                </div>
+            </div>
+            <picture>
+                <source media="(max-width: 600px)" srcset="https://d33wubrfki0l68.cloudfront.net/61176ee37d277222e2885d2dc277c677d61a56e0/92456/images/hero-m.webp">
+                <source media="(min-width: 601px)" srcset="ordi.png">
+                <img aria-hidden="true" decoding="async" src="ordi" alt="new home" width="275" height="132">
+            </picture>
+        </section>
+
+        <!-- ============================================ -->
+    <!--                   Cards landing                 -->
+    <!-- ============================================ -->
+
+    <ul id="services">
+        <li class="cs-item" id="item_1">
+          <!--  <picture class="cs-icon-wrapper" aria-hidden="true">
+                <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/support.svg" alt="icon" width="32" height="32"> -->
+            </picture>
+            <div class="cs-info-group">
+                <span class="cs-header">Davantage de prospects</span>
+                <span class="cs-desc">Nos sites web bénéficient d'une optimisation SEO et de la technology mobile-first pour augmenter votre visibilité en ligne.</span>
+            </div>
+        </li>
+        <li class="cs-item" id="item_2">
+          <!--   <picture class="cs-icon-wrapper" aria-hidden="true">
+                <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/secure.svg" alt="icon" width="32" height="32">
+            </picture>-->
+            <div class="cs-info-group">
+                <span class="cs-header">Davantage de clients</span>
+                <span class="cs-desc">Votre entreprise est unique ! Votre site web sera réalisé sur-mesure pour mettre en avant vos spécificités afin de vous demarquer de la concurrence.</span>
+            </div>
+        </li>
+        <li class="cs-item" id="item_3">
+         <!--    <picture class="cs-icon-wrapper" aria-hidden="true">
+                <img class="cs-icon" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/clean.svg" alt="icon" width="32" height="32">
+            </picture>-->
+            <div class="cs-info-group">
+                <span class="cs-header">Davantage de CA</span>
+                <span class="cs-desc">La mise en avant de votre entreprise vous permettra d'augmenter votre volume de client ce qui se traduira par un chiffre d'affaire maximisé </span>
+                
+            </div>
+        </li>
+    </ul>
+
+        <!-- ============================================ -->
+    <!--                   Services                   -->
+    <!-- ============================================ -->
+
+    <section id="services-9343">
+        <div class="cs-container">
+           
+            <ul class="cs-card-group">
+                <li class="cs-item" id="service_1txt">
+                   
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Une Approche
+                           <span> Unique</span></h3>
+                        <p class="cs-item-text">
+                            
+                        </p>
+                       <p> Nous n'utilisons pas WordPress, ni de frameworks, ni de constructeurs de pages. Nous écrivons méticuleusement le code ligne par ligne, ce qui nous confère un contrôle absolu sur la qualité de conception.</p>
+<br>
+                       <p> 
+                        Les sites web codés à la main sont non seulement plus performants, mais ils sont également favorisés par les moteurs de recherche pour leur fluidité et leur qualité de conception. Chez Omnia vous avez la garantie que nos sites répondent parfaitement à ces critères.
+                        </p>
+                        <a href="" class="cs-link">Read More</a>
+                    </div>
+                </li>
+                <li class="cs-item" id="service_1img">
+                    <picture aria-hidden="true" class="cs-picture">
+                        <img src="firstimg.png" loading="lazy" decoding="async" alt="icon" width="33" height="38">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3"></h3>
+                        <p class="cs-item-text">
+                           
+                        </p>
+                        <a href="" class="cs-link"></a>
+                    </div>
+                </li>
+                <li class="cs-item" id="service_2txt">
+                    <picture aria-hidden="true" class="cs-picture">
+                        <img src="image2.png" loading="lazy" decoding="async" alt="icon" width="33" height="38">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3"></h3>
+                        <p class="cs-item-text">
+                           
+                        </p>
+                        <a href="" class="cs-link"></a>
+                    </div>
+                </li>
+                <li class="cs-item" id="service_2img">
+                    
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h2 class="cs-h3">Des performances
+                            <span>optimales</span></h2>
+                        <p class="cs-item-text">
+                            Selon les données de Google Consumer Insights, 53% des visiteurs d'un site mobile quitteront une page si elle prend plus de trois secondes à charger.
+                            <br>
+                            <br>
+                            Grâce au codage manuel et à une mise en conformité stricte des recommandations techniques "google core web vital". Tous nos sites bénéficient d'un indice de performance exeptionnel de 100% et un temps de chargement de moins de 300 millisecondes. Cela vous garantit une expérience utilisateur fluide pour un taux de conversion optimisé.
+                            <br>
+                            <br>
+                            
+                        </p>
+                        <a href="" class="cs-link">Read More</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+ <!-- ============================================ -->
+        <!--                     2                     -->
+        <!-- ============================================ -->
+
+        <section id="ourservices">
+           
+            <h2>Une Stratégie
+                <span>Efficace</span></h2>
+            <span class="spannie">
+                L'éfficacité est au coeur de nos priorités, tous nos sites sont conçus et optimisés pour vous assurer un succès sur le long terme.
+            </span>
+<div class="flex-container">
+            <div class="flex1">
+                <div class="item">
+                    <li class="cs-item">
+                        <img class="cs-item-image" loading="lazy" decoding="async" src="conv.png" alt="pinwheel icon" width="68" height="68">
+                    <h3>Conversion Maximisée</h3>
+                    
+                    <p>
+                        Tous nos design sont étudiés par un expert en marketting afin d'obtenir le meilleur taux de convertion et ainsi maximiser votre chiffre d'affaire. Rien n'est laissé au hasard.
+                    </p>
+                </div>
+                <div class="item">
+                    <img class="cs-item-image" loading="lazy" decoding="async" src="lpe.png" alt="pinwheel icon" width="68" height="68">
+                    <li class="cs-item">
+                        
+                    <h3>Visibilité</h3>
+                    <p>
+                        Optimisation du référencement, gràce à une approche "mobile-first", une optimisation des mots clés, un code structuré ainsi qu'un respect de la sémantique SEO
+                    </p>
+                </div>
+                
+            </div>
+            <div class="flex2">
+                
+                    <div class="item">
+                        <img src="center_img.png">
+                    </div>
+                   
+                    
+            </div>
+            <div class="flex3">
+                <div class="item">
+                    <li class="cs-item">
+                        <img class="cs-item-image" loading="lazy" decoding="async" src="maj.png" alt="pinwheel icon" width="68" height="68">
+                    <h3>Mise à Jour</h3>
+                   
+                    <p>
+                        Vous disposez également d'un suivi de mise à jour à vie, pour maintenir la performance ainsi que le positionnement de votre site sur les moteurs de recherche.
+                    </p>
+                </div>
+                <div class="item">
+                    <img class="cs-item-image" loading="lazy" decoding="async" src="crayon.png" alt="pinwheel icon" width="68" height="68">
+                    <li class="cs-item">
+                       
+                    <h3>Branding</h3>
+                    <p>
+                        Nous offrons également gracieusement la conception de votre logo par l'intermédiaire de notre propre graphiste interne.
+                    </p>
+                </div>
+                
+                
+            </div>
+
+</div>
+            
+        </section>
+
+
+
+
+
+
+<!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-4578">
+        <div class="cs-container">
+           
+            <h2 class="cs-title">Une Stratégie <span>Efficace</span></h2>
+            <p class="cs-text">
+                L'éfficacité est au coeur de nos priorités, tous nos sites sont conçus et optimisés pour vous assurer un succès sur le long terme.
+            </p>
+             <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img class="cs-item-image" loading="lazy" decoding="async" src="conv.png" alt="pinwheel icon" width="68" height="68">
+                    <h3 class="cs-heading3">Conversion Maximisée</h3>
+                    <p class="cs-item-text">
+                        Tous nos design sont étudiés par un expert en marketting afin d'obtenir le meilleur taux de convertion et ainsi maximiser votre chiffre d'affaire. Rien n'est laissé au hasard.
+                    </p>
+                    <a aria-label="read more about (blank)" href="" class="cs-item-link">Read More</a>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-item-image" loading="lazy" decoding="async" src="lpe.png" alt="leaf icon" width="68" height="68">
+                    <h3 class="cs-heading3">Visibilité</h3>
+                    <p class="cs-item-text">
+                        Nos site internet sont optimisés pour le référencement, gràce à une approche "mobile-first", une optimisation des mots clés, un code structuré ainsi qu'un respect de la sémantique SEO
+                    </p>
+                    <a aria-label="read more about (blank)" href="" class="cs-item-link">Read More</a>
+                </li>
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+                <li class="cs-item">
+                    <img class="cs-item-image" loading="lazy" decoding="async" src="maj.png" alt="bubble wheel" width="68" height="68">
+                    <h3 class="cs-heading3">Mise à Jour</h3>
+                    <p class="cs-item-text">
+                        Vous disposez également d'un suivi de mise à jour à vie, pour maintenir la performance ainsi que le positionnement de votre site sur les moteurs de recherche.
+                    </p>
+                    <a aria-label="read more about (blank)" href="" class="cs-item-link">Read More</a>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-item-image" loading="lazy" decoding="async" src="crayon.png" alt="pinwheel icon" width="68" height="68">
+                    <h3 class="cs-heading3">Branding</h3>
+                    <p class="cs-item-text">
+                        Nous offrons également gracieusement la conception de votre logo par l'intermédiaire de notre propre graphiste interne.
+                    </p>
+                    <a aria-label="read more about (blank)" href="" class="cs-item-link">Read More</a>
+                </li>
+                
+                
+             </ul>
+        </div>
+    </section>
+
+
+
+    
+<!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-6188">
+        <div class="cs-container">
+            
+            <h2 class="cs-title">Des clients <span>satisfaits</span></h2>
+            <p class="cs-text spannie">
+                
+                Voici quelques-unes de nos créations, n'hésitez pas les explorer sur ordinateurs et mobile !  
+            </p>
+            <div class="cs-image-group">
+                <!-- Image 1 -->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1-m.jpg">
+                    <source media="(min-width: 601px)" srcset="projet1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg" alt="fancy house" width="346" height="346">
+                </picture>
+                <!-- Image 2 -->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="projet2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2.jpg" alt="modern house" width="346" height="346">
+                </picture>
+                 <!-- Image 3 -->
+                 <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house3-m.jpg">
+                    <source media="(min-width: 601px)" srcset="projet3.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg" alt="modern home at night" width="346" height="346">
+                </picture>
+                 
+            </div>
+        </div>
+    </section>
+
+
+                                
+    <!-- ============================================ -->
+    <!--                  Pricing                     -->
+    <!-- ============================================ -->
+
+    <section id="pricing-7919">
+        <div class="cs-container">
+            
+            <h2 class="cs-title">Des prix <span>avantageux</span></h2>
+            <p class="cs-text">
+                La qualité à un prix abordable, vous avez le choix entre le prix forfaitaire ou de profiter de l'abonnement sans frais de création.
+            </p>
+            <ul class="cs-card-group">
+                <!-- Option 1 -->
+                <li class="cs-item">
+                    <h3 class="cs-h3">Standard</h3>
+                    <p class="cs-item-text">
+                        Paiement unique
+                    </p>
+                    <div class="cs-option-group">
+                        <span class="cs-price cs-option1-text">1500€</span>
+                        
+                    </div>
+                    <span class="cs-included">Inclus</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Création du site vitrine
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Support aux horaires d'ouvertures
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Modifications illimitées
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="maj2.png" alt="code stitch icon" width="20" height="20">
+                            Mise à jour à vie
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Frais d'hebergement inclus
+                        </li>
+                        
+                    </ul>
+                    <a href="/basic.html" class="cs-button-solid">Souscrire</a>
+                </li>
+                <!-- Option 2 -->
+                <li class="cs-item cs-popular">
+                    <h3 class="cs-h3">Mensuel</h3>
+                    <p class="cs-item-text">
+                        Aucun frais de création
+                    </p>
+                    <div class="cs-option-group">
+                        <span class="cs-price cs-option1-text">99€</span>
+                        
+                    </div>
+                    <span class="cs-included">Inclus</span>
+                    <ul class="cs-ul cs_ulspace">
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Création du site
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Support 24/7
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Modifications illimitées
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Mise à jour à vie
+                        </li>
+                        <li class="cs-li ">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Frais d'hebergement inclus
+                        </li>
+                       
+                    </ul>
+                    <a href="/basic.html" class="cs-button-solid">Souscrire</a>
+                </li>
+                <!-- Option 3 -->
+                <li class="cs-item">
+                    <h3 class="cs-h3">E-commerce</h3>
+                    <p class="cs-item-text">
+                        Paiement unique
+                    </p>
+                    <div class="cs-option-group">
+                        <span class="cs-price cs-option1-text">2500€</span>
+                       
+                    </div>
+                    <span class="cs-included">Inclus</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Création du site 
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Support aux horaires d'ouvertures
+                        </li>
+                        <li class="cs-li cs-disabled" >
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Modifications illimitées
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Mise à jour à vie
+                        </li>
+                        <li class="cs-li cs-disabled">
+                            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Pricing/check-blue.svg" alt="code stitch icon" width="20" height="20">
+                            Frais d'hebergement inclus
+                        </li>
+                        
+                    </ul>
+                    <a href="/basic.html" class="cs-button-solid">Souscrire</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+                       
+    
+
+
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+
+    <section id="cta-8361">
+        <div class="cs-container">
+           
+            <h2 class="cs-title">Prêt à booster votre entreprise ?</h2>
+           
+            <a href="" class="cs-button-solid">Contactez-nous</a>
+        </div>
+        <!-- Background Image-->
+        <picture aria-hidden="true" class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets-m.jpg">
+            <source media="(min-width: 601px)" srcset="omniaback.png">
+            <img loading="lazy" decoding="async" src="omniaback.png" alt="cabinets" width="1920" height="1280">
+         </picture>
+    </section>
+
+
+                                
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-4873">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="bbb2.png" alt="logo" width="178" height="32">
+                </a>
+                <p class="cs-text">
+                    Votre vision, notre mission !
+                </p>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Sitemap</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">A propos</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Services</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Portfolio</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Contact</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Categories</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Design / logo</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Hebergement</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Référencement</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Dévelopement Web</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+                    <a class="cs-nav-link cs-phone" href="tel: 123-456-7890">07 67 34 73 12</a>
+                </li>
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+                    <a class="cs-nav-link cs-address" href="">
+                        42 rue de Soultz<br> Strasbourg, France
+                    </a>
+                </li>
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+                    <a class="cs-nav-link cs-email" href="mailto:info@codestitch.com">contact@omniawebdesigns.com</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-copyright">© Copyright 2022 - <a class="cs-copyright-link" href="Omniawebdesigns.fr">Omnia Web Designs</a></span>
+        </div>
+    </footer>
+                                
+
+
+    <script defer src='https://d33wubrfki0l68.cloudfront.net/bundles/2b9a7509d345da728721878ce72767f0dfdfac67.js'></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    <script>
+        document.addEventListener('scroll', (e) => { 
+            const scroll = document.documentElement.scrollTop;
+            if(scroll >= 200){
+        document.querySelector('body').classList.add('scroll')
+            } else {
+            document.querySelector('body').classList.remove('scroll')
+            }
+        });
+    </script>
+
+</body>
+</html>
