@@ -64,6 +64,7 @@ span{
   }
   #hero .hero-content {
     padding: 0;
+    margin-top: 2.5em;
   }
   #hero .heroText {
     width: 100%;
@@ -81,7 +82,7 @@ span{
   }
   #hero h1 {
     font-weight: 400;
-    font-size: min(11vw, 4em);
+    font-size: min(12vw, 4em);
     color: var(--body);
     text-align: center;
     line-height: 1.171875;
@@ -128,6 +129,7 @@ span{
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
+    
   }
   #hero h1 {
     font-size: min(8vw, 4em);
@@ -227,7 +229,7 @@ span{
     }
     #services .cs-header {
       /* 20px - 25px */
-      font-size: clamp(1.25rem, 2vw, 1.5625rem);
+      font-size: clamp(1.5rem, 2vw, 1.5625rem);
       line-height: 1.2em;
       font-weight: bold;
       text-align: center;
@@ -785,9 +787,10 @@ h3{
       margin: 0 auto;
       margin-bottom: 1.1rem;
       display: block;
+      scale: 1.15;
     }
     #services-4578 .cs-heading3 {
-      font-size: 20px;
+      font-size: 22px;
       line-height: 1.2em;
       text-align: center;
       font-weight: 700;
@@ -796,7 +799,7 @@ h3{
     }
     #services-4578 .cs-item-text {
       /* 14px -16px */
-      font-size: 16px;
+      font-size: 16.5px;
       color: var(--bodyTextColor);
       text-align: center;
       margin: 0 auto 1rem;
@@ -894,6 +897,7 @@ h3{
       width: 88%;
       margin: auto;
       padding-top: 1em;
+      margin-bottom: -0.75em;
     }
 
     #pricing-7919 span {
@@ -930,11 +934,11 @@ h3{
       margin-top: 0.6em;
     }
     #pricing-7919 .cs-text {
-      font-size: var(--bodyFontSize);
+      font-size: 16px;
       line-height: 1.5em;
       text-align: center;
       width: 100%;
-      max-width: 40.625rem;
+      max-width: 600px;
       margin: 0 auto;
       /* 48px - 64px */
       margin-bottom: clamp(3rem, 3vw, 4rem);
@@ -1024,7 +1028,7 @@ h3{
       filter: brightness(900%);
     }
     #pricing-7919 .cs-h3 {
-      font-size: 1.25rem;
+      font-size: 21px;
       line-height: 1.2em;
       font-weight: 700;
       margin: 0 0 0.25rem;
@@ -1033,7 +1037,8 @@ h3{
       text-align: center;
     }
     #pricing-7919 .cs-item-text {
-      font-size: 0.875rem;
+      /*font-size: 0.875rem;*/
+      font-size: 14.7px;
       line-height: 1.5em;
       /* 16px - 24px */
       margin: 0 0 clamp(1rem, 2vw, 1.5rem);
@@ -1072,7 +1077,7 @@ h3{
       color: #4E4B66;
     }
     #pricing-7919 .cs-included {
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.5em;
       font-weight: 700;
       /* 16px - 24px */
@@ -1089,7 +1094,7 @@ h3{
     }
     #pricing-7919 .cs-li {
       /* 14px - 16px */
-      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      font-size: clamp(0.975rem, 1.5vw, 1rem);
       line-height: 1.5em;
       list-style: none;
       padding: 0;
@@ -1221,7 +1226,7 @@ h3{
     }
     #cta-8361 .cs-title {
       /* 31px - 49px */
-      font-size: var(--headerFontSize);
+      font-size: clamp(2.2375rem, 3.9vw, 3.0625rem);
       font-weight: 700;
       line-height: 1.2em;
       text-align: center;
@@ -1240,7 +1245,7 @@ h3{
       color: var(--bodyTextColorWhite);
     }
     #cta-8361 .cs-button-solid {
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 3.5rem;
       text-decoration: none;
       font-weight: 700;
@@ -1638,12 +1643,21 @@ h3{
 
 
 
+#gallery-6188 .cs-title span {
+  display: block;
+}
+
+
+
+@media only screen and (min-width: 48em) {
+  #gallery-6188 .cs-title span {
+    display: inline;
+  }
+}
 
 
 
 
-
-
-
-
-
+#gallery-6188 .cs-picture img{
+  scale: 1.15;
+}
