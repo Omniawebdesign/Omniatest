@@ -607,7 +607,7 @@ h3{
 .spannie{
     display: block !important;
     text-align: center;
-    color: #1a1a1a;
+    color: var(--bodyTextColor);
     margin-bottom: 5em;
     max-width: 600px;
     margin-right: auto;
@@ -942,7 +942,7 @@ h3{
       margin: 0 auto;
       /* 48px - 64px */
       margin-bottom: clamp(3rem, 3vw, 4rem);
-      color: #1a1a1a;
+      color: var(--bodyTextColor);
       font-weight: bold;
     }
     #pricing-7919 .cs-card-group {
@@ -1514,6 +1514,9 @@ h3{
     overflow: hidden;
     margin-bottom: -8em;
     margin-top: -2.5em;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #gallery-6188 span {
