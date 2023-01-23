@@ -1664,3 +1664,7 @@ h3{
 #gallery-6188 .cs-picture img{
   scale: 1.7;
 }
+
+#hero .button-solid{
+font-size: 16px !important;
+}
