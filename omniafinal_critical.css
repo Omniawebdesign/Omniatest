@@ -64,7 +64,7 @@ span{
   }
   #hero .hero-content {
     padding: 0;
-    margin-top: 1.8em;
+    margin-top: 3em;
   }
   #hero .heroText {
     width: 100%;
@@ -93,7 +93,7 @@ span{
     position: relative;
   }
   #hero p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5;
     margin: auto;
     margin-bottom: 2.8em;
@@ -229,7 +229,7 @@ span{
     }
     #services .cs-header {
       /* 20px - 25px */
-      font-size: clamp(1.5rem, 2vw, 1.5625rem);
+      font-size: clamp(1.65rem, 2vw, 1.5625rem);
       line-height: 1.2em;
       font-weight: bold;
       text-align: center;
@@ -931,7 +931,7 @@ h3{
       margin: 0 auto 1.5rem;
       color: var(--headerColor);
       position: relative;
-      margin-top: 0.6em;
+      margin-top: 2.2em;
     }
     #pricing-7919 .cs-text {
       font-size: 16px;
@@ -1664,7 +1664,7 @@ h3{
 
 
 #hero .button-solid{
-  font-size: 15px !important;
+  font-size: 15.5px !important;
 }
 
 
