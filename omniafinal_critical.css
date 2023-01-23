@@ -32,7 +32,7 @@ span{
     height: 100%;
     width: 100%;
     background: var(--primary1);
-    opacity: 1;
+    opacity: 0.9;
     top: 0;
     left: 0;
     z-index: -10;
@@ -1559,7 +1559,7 @@ h3{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.75em;
+    gap: 3em;
     margin-top: -5em;
   }
   #gallery-6188 .cs-item {
@@ -1659,14 +1659,22 @@ h3{
 }
 
 
-#gallery-6188 .cs-image-group {
-    
-    gap: 6em !important;
-   
-  }
 
-#gallery-6188 .cs-picture img{
-  transform: scale(2.2);
+
+
+
+#hero .button-solid{
+  font-size: 15px !important;
 }
 
 
+
+#gallery-6188 .cs-image-group {
+    
+  gap: 6em !important;
+ 
+}
+
+#gallery-6188 .cs-picture img{
+transform: scale(2.2);
+}
