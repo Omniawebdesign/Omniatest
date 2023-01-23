@@ -1659,8 +1659,14 @@ h3{
 }
 
 
-
+#gallery-6188 .cs-image-group {
+    
+    gap: 3em;
+   
+  }
 
 #gallery-6188 .cs-picture img{
-  transform: scale(1.7);
+  transform: scale(2);
 }
+
+
