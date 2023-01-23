@@ -1708,3 +1708,23 @@ font-family: 'Montserrat', Arial, sans-serif;
 #services .cs-item{
 border-radius: 10px;
 }
+
+
+#services-4578 .cs-item-text{
+  font-family:'Montserrat', Arial, sans-serif !important ;
+}
+
+
+#service_1txt{
+  border-radius: 10px 10px 0 0px !important;
+}
+
+#service_1img{
+  border-radius: 0 0px 10px 10px;
+}
+
+
+#service_2txt{
+  border-radius: 0 0 10px 10px;
+}
+
