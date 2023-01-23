@@ -787,10 +787,10 @@ h3{
       margin: 0 auto;
       margin-bottom: 1.1rem;
       display: block;
-      scale: 1.15;
+      scale: 1.05;
     }
     #services-4578 .cs-heading3 {
-      font-size: 22px;
+      font-size: 21px;
       line-height: 1.2em;
       text-align: center;
       font-weight: 700;
@@ -988,7 +988,7 @@ h3{
     #pricing-7919 .cs-popular:before {
       /* Most Popular Tag */
       content: 'Populaire';
-      font-size: 0.875rem;
+      font-size: 0.975rem;
       text-align: center;
       line-height: 1.8125rem;
       font-weight: 700;
@@ -1094,7 +1094,7 @@ h3{
     }
     #pricing-7919 .cs-li {
       /* 14px - 16px */
-      font-size: clamp(0.975rem, 1.5vw, 1rem);
+      font-size: clamp(1.1rem, 1.5vw, 1rem);
       line-height: 1.5em;
       list-style: none;
       padding: 0;
@@ -1662,5 +1662,5 @@ h3{
 
 
 #gallery-6188 .cs-picture img{
-  scale: 2.5;
+  scale: 1.7;
 }
