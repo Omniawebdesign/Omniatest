@@ -1661,12 +1661,12 @@ h3{
 
 #gallery-6188 .cs-image-group {
     
-    gap: 5em !important;
+    gap: 6em !important;
    
   }
 
 #gallery-6188 .cs-picture img{
-  transform: scale(2.5);
+  transform: scale(2.2);
 }
 
 
