@@ -32,7 +32,7 @@ span{
     height: 100%;
     width: 100%;
     background: var(--primary1);
-    opacity: 0.9;
+    opacity: 1;
     top: 0;
     left: 0;
     z-index: -10;
@@ -928,7 +928,7 @@ h3{
       line-height: 1.2em;
       text-align: center;
       max-width: 50rem;
-      margin: 0 auto 1rem;
+      margin: 0 auto 1.5rem;
       color: var(--headerColor);
       position: relative;
       margin-top: 0.6em;
@@ -1548,7 +1548,7 @@ h3{
     text-align: center;
     max-width: 38.8125rem;
     margin: 0 auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     color: var(--headerColor);
     position: relative;
     margin-top: -2em;
@@ -1662,9 +1662,5 @@ h3{
 
 
 #gallery-6188 .cs-picture img{
-  scale: 1.7;
-}
-
-#hero .button-solid{
-font-size: 16px !important;
+  scale: 0.5;
 }
