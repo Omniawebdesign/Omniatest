@@ -440,7 +440,7 @@ span{
     text-transform: uppercase;
     color: #fff;
     line-height: 1.2em;
-    font-size: 1.2em;
+    font-size: 1.35em;
     text-align: center;
     display: inline-block;
     position: relative;
@@ -460,7 +460,7 @@ span{
   }
   #navigation #navbar-menu.open {
     height: 25.5em;
-    padding-top: 1.625em;
+    padding-top: 1.425em;
     z-index: -100;
     background:#0D0020;
     opacity: 0.95;
