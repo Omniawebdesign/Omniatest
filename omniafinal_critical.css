@@ -1081,7 +1081,7 @@ h3{
       line-height: 1.5em;
       font-weight: 700;
       /* 16px - 24px */
-      margin-bottom: clamp(2rem, 3vw, 1.5rem);
+      margin-bottom: clamp(2.5rem, 3vw, 1.5rem);
       color: var(--headerColor);
       display: block;
       text-align: center;
@@ -1090,7 +1090,7 @@ h3{
       padding: 0;
       margin: 0;
       /* 32px - 40px */
-      margin-bottom: clamp(2rem, 4vw, 2.5rem);
+      margin-bottom: 3.7em;
     }
     #pricing-7919 .cs-li {
       /* 14px - 16px */
