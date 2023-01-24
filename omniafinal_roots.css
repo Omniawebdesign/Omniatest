@@ -460,9 +460,10 @@ span{
   }
   #navigation #navbar-menu.open {
     height: 25.5em;
-    padding-top: 5.625em;
+    padding-top: 2.625em;
     z-index: -100;
     background:#0D0020;
+    opacity: 0.9;
   }
   #navigation #navbar-menu.open ul li {
     opacity: 1;
