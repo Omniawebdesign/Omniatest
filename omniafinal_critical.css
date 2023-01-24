@@ -1757,7 +1757,7 @@ width:92% !important;
 }
 
 
-#services-9343 .cs-h3{
-margin-top: 0.5em;
+#services-9343 .cs-item{
+padding: clamp(1.6rem, 3.5vw, 3rem);
   
 }
