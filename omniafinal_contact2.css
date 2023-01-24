@@ -1,6 +1,9 @@
  
 
 
+ 
+
+
 /*-- -------------------------- -->
 <---          Contact           -->
 <--- -------------------------- -*/
@@ -571,7 +574,8 @@ section {
       flex-direction: row;
       flex-wrap: wrap;
       /*justify-content: space-between;*/
-      box-shadow: rgb(149 157 165 / 50%) 0 8px 24px;
+      
+      box-shadow: 0 0.2em 0.85em rgb(0 0 0 / 40%);
     }
     #services-9343 .cs-item {
       /*width: clamp(48.5%, 46vw, 49.2%);*/
