@@ -774,7 +774,7 @@ h3{
     #services-4578 .cs-item {
       list-style: none;
       text-align: center;
-      margin: 0 auto 1rem;
+      margin: 0 auto 0.5rem;
       max-width: 20.8125rem;
     }
     #services-4578 .cs-item:last-of-type {
