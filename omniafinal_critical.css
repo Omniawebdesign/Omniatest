@@ -1081,7 +1081,7 @@ h3{
       line-height: 1.5em;
       font-weight: 700;
       /* 16px - 24px */
-      margin-bottom: clamp(1rem, 3vw, 1.5rem);
+      margin-bottom: clamp(1.5rem, 3vw, 1.5rem);
       color: var(--headerColor);
       display: block;
       text-align: center;
