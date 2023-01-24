@@ -370,7 +370,7 @@ span{
             transform: translate(-50%, -50%) rotate(-225deg);
     left: 50%;
     top: 50%;
-    background-color: #000;
+    background-color: #fff;
   }
   #navigation #navbar-menu {
     position: fixed;
