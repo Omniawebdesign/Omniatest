@@ -438,9 +438,9 @@ span{
   #navigation #navbar-menu ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
     line-height: 1.2em;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center;
     display: inline-block;
     position: relative;
