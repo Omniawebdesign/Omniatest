@@ -255,6 +255,7 @@ span{
   @media only screen and (min-width: 64em) {
     #services {
       margin-top: -4.375rem;
+      max-width: 72em;
     }
     #services .cs-item {
       flex-direction: row;
