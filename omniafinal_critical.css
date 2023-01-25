@@ -1805,6 +1805,8 @@ padding: clamp(2rem, 3.5vw, 3rem);
   }
   
 @media only screen and (min-width: 48em) {
-  gap: 0;
+  cs-image-group {
+    gap: 0;
+  }
   }
 
