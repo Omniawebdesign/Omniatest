@@ -1633,7 +1633,7 @@ h3{
   #gallery-6188 .cs-picture {
     width: 30vw;
     height: 30vw;
-    max-width: 21.625em;
+   /* max-width: 21.625em; */
     max-height: 21.625em;
   }
   
