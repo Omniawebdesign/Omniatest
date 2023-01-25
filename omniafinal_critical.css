@@ -421,11 +421,7 @@ span{
     #services-9343 .cs-item:hover:before {
       height: 100%;
     }
-    #services-9343 .cs-item:hover .cs-h3,
-    #services-9343 .cs-item:hover .cs-item-text,
-    #services-9343 .cs-item:hover .cs-link {
-      color: var(--bodyTextColorWhite);
-    }
+    
     #services-9343 .cs-item:hover .cs-picture {
       border-color: #fff;
     }
