@@ -1754,3 +1754,46 @@ width:92% !important;
 padding: clamp(2rem, 3.5vw, 3rem);
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 48em) {
+  #service_1txt{
+    border-radius: 10px 0 0 0px !important;
+  }
+  
+  #service_1img{
+    border-radius: 0 10px 0px 0;
+  }
+  
+  
+  #service_2txt{
+    border-radius: 0 0 0 10px;
+  }
+  
+  
+  #service_2img{
+    border-radius: 0 0 10px 0;
+  }
+  }
+
+
+
+
