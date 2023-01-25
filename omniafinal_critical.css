@@ -429,10 +429,7 @@ span{
     #services-9343 .cs-item:hover .cs-picture {
       border-color: #fff;
     }
-    #services-9343 .cs-item:hover .cs-picture img {
-      /* makes img turn grey, then brightened to get whiter */
-      filter: grayscale(1) brightness(1000%);
-    }
+   
    
     #services-9343 .cs-picture {
       /* 24px - 36px */
