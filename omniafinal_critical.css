@@ -1684,7 +1684,7 @@ transform: scale(2.2);
 
 @media only screen and (min-width: 48em) {
   #gallery-6188 .cs-picture img{
-transform: scale(1);
+transform: scale(1.2);
 }
   }
 
@@ -1806,4 +1806,7 @@ padding: clamp(2rem, 3.5vw, 3rem);
   }
   
 
-
+@media only screen and (min-width: 48em) {
+  #gallery-6188 {
+    width:95%
+  }
