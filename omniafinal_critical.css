@@ -1803,5 +1803,8 @@ padding: clamp(2rem, 3.5vw, 3rem);
   #gallery-6188 .cs-image-group{
     flex-wrap: nowrap;
   }
-
+  
+@media only screen and (min-width: 48em) {
+  gap: 0;
+  }
 
