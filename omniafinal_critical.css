@@ -1682,6 +1682,11 @@ transform: scale(2.2);
 }
 
 
+@media only screen and (min-width: 48em) {
+  #gallery-6188 .cs-picture img{
+transform: scale(1);
+}
+  }
 
 
 
