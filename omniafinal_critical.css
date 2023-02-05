@@ -978,7 +978,7 @@ h3{
       overflow: hidden;
       /* send to the top */
       order: -1;
-      box-shadow: 0 0.2em 0.85em rgb(0 0 0 / 30%);
+      box-shadow: 0 0.2em 0.85em rgb(0 0 0 / 40%);
     }
     #pricing-7919 .cs-popular:before {
       /* Most Popular Tag */
