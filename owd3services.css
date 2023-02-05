@@ -293,3 +293,7 @@
     position: relative;
     margin-top: -3.75em;
 }
+
+#banner{
+height: 23em !important;
+}
