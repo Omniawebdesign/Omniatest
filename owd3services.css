@@ -282,3 +282,14 @@
  .lastsec{
   margin-top: -2em !important;
  }
+
+
+
+#banner h1 {
+    color: #fff;
+    font-size: 3.2em;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    margin-top: -3.75em;
+}
