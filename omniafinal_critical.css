@@ -1174,9 +1174,13 @@ h3{
     }
   }
                                   
-
-
-
+@media only screen and (min-width: 48em){
+ #pricing-7919 .cs-card-group {
+      
+      /* 16px - 20px */
+      gap: clamp(1rem, 2vw, 1.25rem);
+    }
+}
 /*-- -------------------------- -->
 <---            CTA             -->
 <--- -------------------------- -*/
