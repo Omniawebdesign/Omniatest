@@ -656,3 +656,16 @@ border-radius: 12px;
 #cs-contact-4630 #cs-form {
 width: 115%;
 }
+
+
+
+
+
+
+.service_1txt{
+border-radius: 12px 0 0 12px;
+}
+
+.service_1img{
+border-radius: 0 12px 12px 0;;
+}
